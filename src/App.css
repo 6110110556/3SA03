@@ -6,9 +6,33 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
+  background-color: rgb(253, 208, 176);
+
  }
 
  .activeCard {
    color: red;
    background-color: pink;
  }
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 100;
+  background-color:rgb(241, 200, 163);
+}
+
+h1 {
+  text-align: center;
+  font-size: medium;
+
+}
+
+center {
+  background-image: url("https://image.freepik.com/free-vector/cute-cat-kitten-family-cartoon-doodle-banner_40564-293.jpg");
+  background-size: 325px 250px;
+  background-color: slateblue;
+}
+
+.p1 {
+  text-emphasis-position: 20px;
+}
