@@ -55,19 +55,20 @@ else{
 function App() {
   return (
     <body>
-      <center><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h1>WELCOM</h1><br></br></center>
+      <div className = 'h01'><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h1>WELCOM</h1><br></br></div>
+      {/* <center><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h1>WELCOM</h1><br></br></center> */}
       {/* <center><img src="https://image.freepik.com/free-vector/cute-cat-kitten-family-cartoon-doodle-banner_40564-293.jpg" alt="cat" aria-setsize=""></img></center> */}
       <h1> This is Shuffle word game !</h1>
       <h1>We will test your English knowledge.</h1>
-      
-      1. "{quest01}" ภาษาอังกฎษว่าอะไร ? <br></br>
+      &nbsp;&nbsp;&nbsp;1. "{quest01}" ภาษาอังกฎษว่าอะไร ? <br></br>
       <WordCard value={word01}/>
 
-      2. "{quest02}" ภาษาอังกฎษว่าอะไร ? <br></br>
+      &nbsp;&nbsp;&nbsp;2. "{quest02}" ภาษาอังกฎษว่าอะไร ? <br></br>
       <WordCard value={word02}/>
 
-      3. "{quest03}" ภาษาอังกฎษว่าอะไร ? <br></br>
+      &nbsp;&nbsp;&nbsp;3. "{quest03}" ภาษาอังกฎษว่าอะไร ? <br></br>
       <WordCard value={word03}/>
+      
     </body>
     
   );
