@@ -34,14 +34,12 @@ export default function WordCard(props){
                 setState({...state, completed: true})
                 if(correct == 3) {
                     console("You win!")
-                    alertWin()
+                    alertToWin()
                     window.location.reload(false)
                 }
-                
-                
             }else{
                 console.log('reset, next attempt')
-                alert("Try again")
+                alert("TRY AGAIN")
                 setState({...state, guess: '', attempt: state.attempt + 1})
             }
         }
@@ -59,15 +57,15 @@ export default function WordCard(props){
     )
 }
 
-function alertWin() {
+function alertToWin() {
     var ale = Math.floor(Math.random() * 3);
     if(ale == 0) {
-        alert("You Win!");
+        alert("YOU WIN!");
     }
-    if(ale == 1) {
-        alert("Congratulation!");
+    else if(ale == 1) {
+        alert("YOUR ENGLISH SO GOOD!");
     }
-    if(ale == 2) {
-        alert("You So Wise!");
+    else{
+        alert("YOU SO WISE!");
     }
 }
