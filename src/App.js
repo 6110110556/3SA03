@@ -11,7 +11,6 @@ var word03 = "";
 
 var i = Math.floor(Math.random()*5);
 
-
 if(i == 0) {
     quest01 = "สวัสดี";
     word01 = "HELLO";
@@ -45,12 +44,12 @@ else if(i == 3) {
     word03 = "TELEPHONE";
 }
 else{
-  quest01 = "เป็ด";
-  word01 = "DUCK";
-  quest02 = "เสือ";
-  word02 = "TIGER";
-  quest03 = "สิงโต";
-  word03 = "LION";
+    quest01 = "เป็ด";
+    word01 = "DUCK";
+    quest02 = "เสือ";
+    word02 = "TIGER";
+    quest03 = "สิงโต";
+    word03 = "LION";
 }
 
 function App() {

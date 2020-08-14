@@ -33,7 +33,7 @@ export default function WordCard(props){
                 alert('WOW ! You Correct' + 'Your point is '+ correct)
                 setState({...state, completed: true})
                 if(correct == 3) {
-                    console("You win!")
+                    console("YOU WIN!")
                     alertToWin()
                     window.location.reload(false)
                 }
