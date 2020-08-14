@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import _, { attempt } from 'lodash';
+import _, { attempt, isInteger, toInteger } from 'lodash';
 
 import CharacterCard from './CharacterCard';
-
+var correct = 0;
 const prepareStateFromWord = given_word => {
     let word = given_word.toUpperCase()
     let chars = _.shuffle(Array.from(word))
+    
     return {
         word,
         chars,
@@ -27,13 +28,24 @@ export default function WordCard(props){
 
         if(guess.length == state.word.length){
             if(guess == state.word){
-                console.log('yeah!')
+                correct++;
+                console.log('WOW ! You Correct' + 'Your point is '+ correct)
+                alert('WOW ! You Correct' + 'Your point is '+ correct)
                 setState({...state, completed: true})
+                if(correct == 3) {
+                    console("You win!")
+                    alertWin()
+                    window.location.reload(false)
+                }
+                
+                
             }else{
                 console.log('reset, next attempt')
+                alert("Try again")
                 setState({...state, guess: '', attempt: state.attempt + 1})
             }
         }
+        
     }
     
     
@@ -45,4 +57,17 @@ export default function WordCard(props){
             }
         </div>
     )
+}
+
+function alertWin() {
+    var ale = Math.floor(Math.random() * 3);
+    if(ale == 0) {
+        alert("You Win!");
+    }
+    if(ale == 1) {
+        alert("Congratulation!");
+    }
+    if(ale == 2) {
+        alert("You So Wise!");
+    }
 }
