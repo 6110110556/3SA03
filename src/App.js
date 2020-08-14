@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import WordCard from './WordCard';
 
-const word = "Hello";// fix is word 1 2 3
+const word01 = "Hello";// fix is word 1 2 3
+const word02 = "Cat";
+const word03 = "Run";
 function App() {
   return (
     <body>
@@ -13,13 +15,13 @@ function App() {
         <h1>We will test your English knowledge.</h1>
         
         1. "สวัสดี" ภาษาอังกฎษว่าอะไร ? <br></br>
-        <WordCard value={word}/>
+        <WordCard value={word01}/>
 
         2. "แมว" ภาษาอังกฎษว่าอะไร ? <br></br>
-        <WordCard value={word}/>
+        <WordCard value={word02}/>
 
         3. "วิ่ง" ภาษาอังกฎษว่าอะไร ? <br></br>
-        <WordCard value={word}/>
+        <WordCard value={word03}/>
         
       </div>
     </body>
