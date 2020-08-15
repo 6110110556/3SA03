@@ -60,8 +60,8 @@ export default function WordCard(props){
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>)
             }
             <br></br>
-            &nbsp;&nbsp;&nbsp;หากคุณตอบเกิน 3 ครั้งแล้วคุณยังไม่สามารถหาคำตอบได้สามารถกดปุ่ม <button onClick={() => displayAnswer(ans, row)}>Answer</button>  เพื่อดูเฉลยได้ <br></br><br></br><br></br>
-            <div id="demo"></div><br></br>
+            &nbsp;&nbsp;&nbsp;หากคุณตอบเกิน 3 ครั้งแล้วคุณยังไม่สามารถหาคำตอบได้สามารถกดปุ่ม <button onClick={() => displayAnswer(ans, row)}>Answer</button>  เพื่อดูเฉลยได้
+            <div id="demo"></div><br></br><br></br><br></br>
         </div>
     )
 }
