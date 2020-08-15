@@ -18,13 +18,19 @@
 body {
   font-family: "Comic Sans MS";
   font-weight: 100;
-  background-color:rgb(241, 200, 163);
+  background-color:rgb(190, 207, 255);
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5sVsxvm9RuLk0Ywh6eMJLlSJGb1ivoOLGtw&usqp=CAU"); */
+  
 }
 
 h1 {
   text-align: center;
   font-size: medium;
 
+}
+h2 {
+  text-align: center;
+  font-size: large;
 }
 
 .p1 {
