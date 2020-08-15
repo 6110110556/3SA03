@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import _, { attempt, isInteger, toInteger } from 'lodash';
 
 import CharacterCard from './CharacterCard';
+
 var correct = 0;
 const prepareStateFromWord = given_word => {
     let word = given_word.toUpperCase()
@@ -69,3 +70,4 @@ function alertToWin() {
         alert("YOU SO WISE!");
     }
 }
+
