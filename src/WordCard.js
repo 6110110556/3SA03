@@ -38,8 +38,8 @@ export default function WordCard(props){
                 alert('WOW ! You Correct' + 'Your point is '+ correct)
                 setState({...state, completed: true})
                 if(correct == 3) {
-                    console("YOU WIN!")
-                    alertToWin()
+                    console.log("YOU WIN!")
+                    alertToWin();
                     window.location.reload(false)
                 }
             }else{
@@ -60,8 +60,7 @@ export default function WordCard(props){
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>)
             }
             <br></br>
-            &nbsp;&nbsp;&nbsp;หากคุณตอบเกิน 3 ครั้งแล้วคุณยังไม่สามารถหาคำตอบได้สามารถกดปุ่ม <button onClick={() => displayAnswer(ans, row)}>Answer</button>  เพื่อดูเฉลยได้
-            <div id="demo"></div><br></br><br></br><br></br>
+            &nbsp;&nbsp;&nbsp;หากคุณตอบเกิน 3 ครั้งแล้วคุณยังไม่สามารถหาคำตอบได้สามารถกดปุ่ม <button onClick={() => displayAnswer(ans, row)}>Answer</button>  เพื่อดูเฉลยได้<br></br><br></br>
         </div>
     )
 }

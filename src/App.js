@@ -58,6 +58,7 @@ function App() {
       <div className = 'h01'><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><h2>WELCOM</h2><br></br></div>
       <h1> This is Shuffle word game !</h1>
       <h1>We will test your English knowledge.</h1> <br></br>
+      <div className = "h3"><div id="demo"></div><br></br></div>
 
       &nbsp;&nbsp;&nbsp;1. "{quest01}" ภาษาอังกฤษว่าอะไร ? <br></br>
       <WordCard value={word01}/>
